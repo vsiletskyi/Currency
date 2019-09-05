@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(201, 195, 195);
+}
+
+.tb_br {
+    width: 50%;
+    height: 50vh;
+    border: 1px solid gray;
+    margin: 20px auto; 
+    border-collapse: collapse;
+    background: rgb(247, 236, 236);
+}
+
+td, th {
+    border: solid 1px gray;
+    padding: 5px;
+    text-align: center;
+}
+
+.uah {
+    color: rgb(207, 192, 192);
+}

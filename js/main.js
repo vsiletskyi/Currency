@@ -56,6 +56,10 @@ function PrintCurrency(currencyData) {
     //console.log(currencyData);
    
     let elem = document.querySelector("#root");
+    var h2 = document.createElement("h2");
+    elem.append(h2);
+    h2.textContent = ("Курс валют");
+    h2.setAttribute("class", "h2");
     
 
     var table = document.createElement("table");
@@ -77,7 +81,11 @@ function PrintCurrency(currencyData) {
     
     
     table.rows[0].cells[2].textContent = ("Купівля");
+    table.rows[0].cells[2].setAttribute("class", "text");
+
     table.rows[0].cells[3].textContent = ("Продаж");
+    table.rows[0].cells[3].setAttribute("class", "text");
+
     table.rows[1].cells[0].textContent = ("USD");
     table.rows[1].cells[1].textContent = ("UAH");
     table.rows[1].cells[2].innerHTML = (currencyData.usd_uah_buy);
